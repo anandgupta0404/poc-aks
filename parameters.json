@@ -1,0 +1,60 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "poc-aks01"
+        },
+        "location": {
+            "value": "northeurope"
+        },
+        "dnsPrefix": {
+            "value": "poc-aks01-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.25.6"
+        },
+        "networkPlugin": {
+            "value": "azure"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "nodeResourceGroup": {
+            "value": "MC_poc-aks01_group_poc-aks01_northeurope"
+        },
+        "upgradeChannel": {
+            "value": "patch"
+        },
+        "adminGroupObjectIDs": {
+            "value": []
+        },
+        "disableLocalAccounts": {
+            "value": false
+        },
+        "azureRbac": {
+            "value": false
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "enableSecretStoreCSIDriver": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "vnetSubnetID": {
+            "value": "/subscriptions/db65fb0d-3256-4477-9152-f540130d71d0/resourceGroups/poc-aks01_group/providers/Microsoft.Network/virtualNetworks/poc-aks01_group-vnet/subnets/default"
+        },
+        "serviceCidr": {
+            "value": "10.0.0.0/16"
+        },
+        "dnsServiceIP": {
+            "value": "10.0.0.10"
+        }
+    }
+}
